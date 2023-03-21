@@ -6,5 +6,5 @@ async function getAcitvity() {
     let randomActivity = await fetch(apiURL);
     let data = await randomActivity.json();
     let {activity} = data;
-    activityScreen.textContent += activity;
+    activityScreen.textContent = activity;
 }
