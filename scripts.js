@@ -1,4 +1,3 @@
-const unboredBtn = document.querySelector(".unboredBtn").addEventListener("click", getAcitvity);
 const activityScreen = document.querySelector(".activity");
 
 async function getAcitvity() {
