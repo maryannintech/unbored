@@ -6,7 +6,7 @@ async function getAcitvity(url) {
     let data = await randomActivity.json();
     let {activity} = data;
     let {participants} = data;
-    activityScreen.textContent = `${activity}\r\n Participants: ${participants}`;
+    activityScreen.textContent = `${activity}\r\n Participant/s: ${participants}`;
 }
 
 function buttonClicked(type) {
