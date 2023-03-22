@@ -8,60 +8,55 @@ async function getAcitvity(url) {
     activityScreen.textContent = activity;
 }
 
-// BUTTONS FUNCTIONS
-function educationClicked() {
-    apiURL = "http://www.boredapi.com/api/activity?type=education";
-    getAcitvity(apiURL);
+function buttonClicked(type) {
+    switch(type) {
+        case "edu":
+            apiURL = "http://www.boredapi.com/api/activity?type=education";
+            getAcitvity(apiURL);
+            break;
+        case "recrea":
+            apiURL = "http://www.boredapi.com/api/activity?type=education";
+            getAcitvity(apiURL);
+            break;
+        case "social":
+            apiURL = "http://www.boredapi.com/api/activity?type=social";
+            getAcitvity(apiURL);
+            break;
+        case "diy":
+            apiURL = "http://www.boredapi.com/api/activity?type=diy";
+            getAcitvity(apiURL);
+            break;
+        case "charity":
+            apiURL = "http://www.boredapi.com/api/activity?type=charity";
+            getAcitvity(apiURL);
+            break;
+        case "cooking":
+            apiURL = "http://www.boredapi.com/api/activity?type=cooking";
+            getAcitvity(apiURL);
+            break;
+        case "relaxation":
+            apiURL = "http://www.boredapi.com/api/activity?type=relaxation";
+            getAcitvity(apiURL);
+            break;
+        case "music":
+            apiURL = "http://www.boredapi.com/api/activity?type=music";
+            getAcitvity(apiURL);
+            break;
+        case "busywork":
+            apiURL = "http://www.boredapi.com/api/activity?type=busywork";
+            getAcitvity(apiURL);
+            break;
+        }
 }
 
-function recreationalClicked() {
-    apiURL = "http://www.boredapi.com/api/activity?type=recreational";
-    getAcitvity(apiURL);
-}
-
-function socialClicked() {
-    apiURL = "http://www.boredapi.com/api/activity?type=social";
-    getAcitvity(apiURL);
-}
-
-function diyClicked() {
-    apiURL = "http://www.boredapi.com/api/activity?type=diy";
-    getAcitvity(apiURL);
-}
-
-function charityClicked() {
-    apiURL = "http://www.boredapi.com/api/activity?type=charity";
-    getAcitvity(apiURL);
-}
-
-function cookingClicked() {
-    apiURL = "http://www.boredapi.com/api/activity?type=cooking";
-    getAcitvity(apiURL);;
-}
-
-function relaxationClicked() {
-    apiURL = "http://www.boredapi.com/api/activity?type=relaxation";
-    getAcitvity(apiURL);
-}
-
-function musicClicked() {
-    apiURL = "http://www.boredapi.com/api/activity?type=music";
-    getAcitvity(apiURL);;
-}
-
-function busyworkClicked() {
-    apiURL = "http://www.boredapi.com/api/activity?type=busywork";
-    getAcitvity(apiURL);
-}
-
-const educationBtn = document.querySelector(".education").addEventListener("click", educationClicked);
-const recreationalBtn = document.querySelector(".recreational").addEventListener("click", recreationalClicked);
-const socialBtn = document.querySelector(".social").addEventListener("click", socialClicked);
-const diyBtn = document.querySelector(".diy").addEventListener("click", diyClicked);
-const charityBtn = document.querySelector(".charity").addEventListener("click", charityClicked);
-const cookingBtn = document.querySelector(".cooking").addEventListener("click", cookingClicked);
-const relaxationBtn = document.querySelector(".relaxation").addEventListener("click", relaxationClicked);
-const musicBtn = document.querySelector(".music").addEventListener("click", musicClicked);
-const busyworkBtn = document.querySelector(".busywork").addEventListener("click", busyworkClicked);
+const educationBtn = document.querySelector(".education").addEventListener("click", () => {buttonClicked("edu")});
+const recreationalBtn = document.querySelector(".recreational").addEventListener("click", () => {buttonClicked("recrea")});
+const socialBtn = document.querySelector(".social").addEventListener("click", () => {buttonClicked("social")});
+const diyBtn = document.querySelector(".diy").addEventListener("click", () => {buttonClicked("diy")});
+const charityBtn = document.querySelector(".charity").addEventListener("click", () => {buttonClicked("charity")});
+const cookingBtn = document.querySelector(".cooking").addEventListener("click", () => {buttonClicked("cooking")});
+const relaxationBtn = document.querySelector(".relaxation").addEventListener("click", () => {buttonClicked("relaxation")});
+const musicBtn = document.querySelector(".music").addEventListener("click", () => {buttonClicked("music")});
+const busyworkBtn = document.querySelector(".busywork").addEventListener("click", () => {buttonClicked("busywork")});
 
 const activityScreen = document.querySelector(".activity");
