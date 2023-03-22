@@ -1,3 +1,58 @@
+let apiURL;
+
+async function getAcitvity(url) {
+    url = apiURL;
+    let randomActivity = await fetch(url);
+    let data = await randomActivity.json();
+    let {activity} = data;
+    activityScreen.textContent = activity;
+}
+
+async function educationClicked() {
+    apiURL = "http://www.boredapi.com/api/activity?type=education";
+    getAcitvity(apiURL);
+}
+
+async function recreationalClicked() {
+    apiURL = "http://www.boredapi.com/api/activity?type=recreational";
+    getAcitvity(apiURL);
+}
+
+async function socialClicked() {
+    apiURL = "http://www.boredapi.com/api/activity?type=social";
+    getAcitvity(apiURL);
+}
+
+async function diyClicked() {
+    apiURL = "http://www.boredapi.com/api/activity?type=diy";
+    getAcitvity(apiURL);
+}
+
+async function charityClicked() {
+    apiURL = "http://www.boredapi.com/api/activity?type=charity";
+    getAcitvity(apiURL);
+}
+
+async function cookingClicked() {
+    apiURL = "http://www.boredapi.com/api/activity?type=cooking";
+    getAcitvity(apiURL);;
+}
+
+async function relaxationClicked() {
+    apiURL = "http://www.boredapi.com/api/activity?type=relaxation";
+    getAcitvity(apiURL);
+}
+
+async function musicClicked() {
+    apiURL = "http://www.boredapi.com/api/activity?type=music";
+    getAcitvity(apiURL);;
+}
+
+async function busyworkClicked() {
+    apiURL = "http://www.boredapi.com/api/activity?type=busywork";
+    getAcitvity(apiURL);
+}
+
 const educationBtn = document.querySelector(".education").addEventListener("click", educationClicked);
 const recreationalBtn = document.querySelector(".recreational").addEventListener("click", recreationalClicked);
 const socialBtn = document.querySelector(".social").addEventListener("click", socialClicked);
@@ -9,83 +64,3 @@ const musicBtn = document.querySelector(".music").addEventListener("click", musi
 const busyworkBtn = document.querySelector(".busywork").addEventListener("click", busyworkClicked);
 
 const activityScreen = document.querySelector(".activity");
-
-async function getAcitvity() {
-    const apiURL = "https://www.boredapi.com/api/activity/";
-    let randomActivity = await fetch(apiURL);
-    let data = await randomActivity.json();
-    let {activity} = data;
-    activityScreen.textContent = activity;
-}
-
-async function educationClicked() {
-    const apiURL = "http://www.boredapi.com/api/activity?type=education";
-    let randomActivity = await fetch(apiURL);
-    let data = await randomActivity.json();
-    let {activity} = data;
-    activityScreen.textContent = activity;
-}
-
-async function recreationalClicked() {
-    const apiURL = "http://www.boredapi.com/api/activity?type=recreational";
-    let randomActivity = await fetch(apiURL);
-    let data = await randomActivity.json();
-    let {activity} = data;
-    activityScreen.textContent = activity;
-}
-
-async function socialClicked() {
-    const apiURL = "http://www.boredapi.com/api/activity?type=social";
-    let randomActivity = await fetch(apiURL);
-    let data = await randomActivity.json();
-    let {activity} = data;
-    activityScreen.textContent = activity;
-}
-
-async function diyClicked() {
-    const apiURL = "http://www.boredapi.com/api/activity?type=diy";
-    let randomActivity = await fetch(apiURL);
-    let data = await randomActivity.json();
-    let {activity} = data;
-    activityScreen.textContent = activity;
-}
-
-async function charityClicked() {
-    const apiURL = "http://www.boredapi.com/api/activity?type=charity";
-    let randomActivity = await fetch(apiURL);
-    let data = await randomActivity.json();
-    let {activity} = data;
-    activityScreen.textContent = activity;
-}
-
-async function cookingClicked() {
-    const apiURL = "http://www.boredapi.com/api/activity?type=cooking";
-    let randomActivity = await fetch(apiURL);
-    let data = await randomActivity.json();
-    let {activity} = data;
-    activityScreen.textContent = activity;
-}
-
-async function relaxationClicked() {
-    const apiURL = "http://www.boredapi.com/api/activity?type=relaxation";
-    let randomActivity = await fetch(apiURL);
-    let data = await randomActivity.json();
-    let {activity} = data;
-    activityScreen.textContent = activity;
-}
-
-async function musicClicked() {
-    const apiURL = "http://www.boredapi.com/api/activity?type=music";
-    let randomActivity = await fetch(apiURL);
-    let data = await randomActivity.json();
-    let {activity} = data;
-    activityScreen.textContent = activity;
-}
-
-async function busyworkClicked() {
-    const apiURL = "http://www.boredapi.com/api/activity?type=busywork";
-    let randomActivity = await fetch(apiURL);
-    let data = await randomActivity.json();
-    let {activity} = data;
-    activityScreen.textContent = activity;
-}
