@@ -24,14 +24,6 @@ button {
     color: #472D30;
 }
 
-button:hover {
-    border-color: #472D30;
-}
-
-button:focus {
-    border-color: #472D30;
-}
-
 header {
     display: flex;
     justify-content: space-between;
@@ -43,9 +35,9 @@ header {
     border-radius: 50px;
 }
 
-.toptext {
-    font-size: 18px;
-    margin: 0 10px;
+a {
+    text-decoration: none;
+    color: #472D30;
 }
 
 .bx-bulb {
@@ -53,14 +45,8 @@ header {
     color: #472D30;
 }
 
-.bx-bulb:hover {
-    color: #723D46;
-}
-
-.types .bx {
-    font-size: 20px;
-    margin-right: 8px;
-    color: #472D30;
+h1 {
+    margin-bottom: 20px;
 }
 
 main {
@@ -71,6 +57,11 @@ main {
     flex-direction: column;
 }
 
+.toptext {
+    font-size: 18px;
+    margin: 0 10px;
+}
+
 .types {
     display: flex;
     justify-content: center;
@@ -79,17 +70,22 @@ main {
     margin-top: 20px;
 }
 
+.types .bx {
+    font-size: 20px;
+    margin-right: 8px;
+    color: #472D30;
+}
+
+button:hover {
+    border-color: #472D30;
+}
+
+button:focus {
+    border-color: #472D30;
+}
+
 .btn {
     margin: 6px 8px;
-}
-
-h1 {
-    margin-bottom: 20px;
-}
-
-a {
-    text-decoration: none;
-    color: #472D30;
 }
 
 .activity {
