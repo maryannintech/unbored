@@ -8,47 +8,47 @@ async function getAcitvity(url) {
     activityScreen.textContent = activity;
 }
 
-async function educationClicked() {
+function educationClicked() {
     apiURL = "http://www.boredapi.com/api/activity?type=education";
     getAcitvity(apiURL);
 }
 
-async function recreationalClicked() {
+function recreationalClicked() {
     apiURL = "http://www.boredapi.com/api/activity?type=recreational";
     getAcitvity(apiURL);
 }
 
-async function socialClicked() {
+function socialClicked() {
     apiURL = "http://www.boredapi.com/api/activity?type=social";
     getAcitvity(apiURL);
 }
 
-async function diyClicked() {
+function diyClicked() {
     apiURL = "http://www.boredapi.com/api/activity?type=diy";
     getAcitvity(apiURL);
 }
 
-async function charityClicked() {
+function charityClicked() {
     apiURL = "http://www.boredapi.com/api/activity?type=charity";
     getAcitvity(apiURL);
 }
 
-async function cookingClicked() {
+function cookingClicked() {
     apiURL = "http://www.boredapi.com/api/activity?type=cooking";
     getAcitvity(apiURL);;
 }
 
-async function relaxationClicked() {
+function relaxationClicked() {
     apiURL = "http://www.boredapi.com/api/activity?type=relaxation";
     getAcitvity(apiURL);
 }
 
-async function musicClicked() {
+function musicClicked() {
     apiURL = "http://www.boredapi.com/api/activity?type=music";
     getAcitvity(apiURL);;
 }
 
-async function busyworkClicked() {
+function busyworkClicked() {
     apiURL = "http://www.boredapi.com/api/activity?type=busywork";
     getAcitvity(apiURL);
 }
