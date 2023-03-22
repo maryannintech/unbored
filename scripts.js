@@ -8,6 +8,7 @@ async function getAcitvity(url) {
     activityScreen.textContent = activity;
 }
 
+// BUTTONS FUNCTIONS
 function educationClicked() {
     apiURL = "http://www.boredapi.com/api/activity?type=education";
     getAcitvity(apiURL);
