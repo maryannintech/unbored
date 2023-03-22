@@ -11,6 +11,10 @@ button {
     border: 2px solid chocolate;
     background-color: lightgreen;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 6px 10px;
+    font-size: 16px;
 }
 
 header {
@@ -18,11 +22,20 @@ header {
     justify-content: space-between;
     align-items: center;
     margin: 15px 20px;
-    font-size: 14px;
+    font-size: 16px;
 }
 
-.bx {
-    font-size: 30px;
+.toptext {
+    font-size: 18px;
+}
+
+.bx-bulb {
+    font-size: 40px;
+}
+
+.types .bx {
+    font-size: 20px;
+    margin-right: 8px;
 }
 
 main {
@@ -38,6 +51,7 @@ main {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    margin-top: 20px;
 }
 
 .btn {
@@ -46,5 +60,15 @@ main {
 
 h1 {
     margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.activity {
+    white-space: pre;
+    margin: 50px;
 }
 
