@@ -15,7 +15,7 @@ function buttonClicked(type) {
             getAcitvity(apiURL);
             break;
         case "recrea":
-            apiURL = "http://www.boredapi.com/api/activity?type=education";
+            apiURL = "http://www.boredapi.com/api/activity?type=recreational";
             getAcitvity(apiURL);
             break;
         case "social":
