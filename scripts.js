@@ -7,6 +7,7 @@ async function getAcitvity(url) {
     let {activity} = data;
     let {participants} = data;
     activityScreen.textContent = `${activity}\r\n Participant/s: ${participants}`;
+    activityScreen.style.cssText = "border: 2px solid #472D30; border-radius: 50px; padding: 5px 20px; background: linear-gradient(to bottom right, #C9CBA3, #FFE1A8);";
 }
 
 function buttonClicked(type) {
