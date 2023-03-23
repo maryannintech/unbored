@@ -13,39 +13,39 @@ async function getAcitvity(url) {
 function buttonClicked(type) {
     switch(type) {
         case "edu":
-            apiURL = "http://www.boredapi.com/api/activity?type=education";
+            apiURL = "https://www.boredapi.com/api/activity?type=education";
             getAcitvity(apiURL);
             break;
         case "recrea":
-            apiURL = "http://www.boredapi.com/api/activity?type=recreational";
+            apiURL = "https://www.boredapi.com/api/activity?type=recreational";
             getAcitvity(apiURL);
             break;
         case "social":
-            apiURL = "http://www.boredapi.com/api/activity?type=social";
+            apiURL = "https://www.boredapi.com/api/activity?type=social";
             getAcitvity(apiURL);
             break;
         case "diy":
-            apiURL = "http://www.boredapi.com/api/activity?type=diy";
+            apiURL = "https://www.boredapi.com/api/activity?type=diy";
             getAcitvity(apiURL);
             break;
         case "charity":
-            apiURL = "http://www.boredapi.com/api/activity?type=charity";
+            apiURL = "https://www.boredapi.com/api/activity?type=charity";
             getAcitvity(apiURL);
             break;
         case "cooking":
-            apiURL = "http://www.boredapi.com/api/activity?type=cooking";
+            apiURL = "https://www.boredapi.com/api/activity?type=cooking";
             getAcitvity(apiURL);
             break;
         case "relaxation":
-            apiURL = "http://www.boredapi.com/api/activity?type=relaxation";
+            apiURL = "https://www.boredapi.com/api/activity?type=relaxation";
             getAcitvity(apiURL);
             break;
         case "music":
-            apiURL = "http://www.boredapi.com/api/activity?type=music";
+            apiURL = "https://www.boredapi.com/api/activity?type=music";
             getAcitvity(apiURL);
             break;
         case "busywork":
-            apiURL = "http://www.boredapi.com/api/activity?type=busywork";
+            apiURL = "https://www.boredapi.com/api/activity?type=busywork";
             getAcitvity(apiURL);
             break;
         }
