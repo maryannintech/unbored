@@ -38,6 +38,9 @@ header {
 a {
     text-decoration: none;
     color: #472D30;
+    border: 2px solid #472D30;
+    border-radius: 50px;
+    padding: 3px 8px;
 }
 
 .bx-bulb {
